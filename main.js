@@ -35,6 +35,10 @@ function updateCoffees(e) {
 }
 
 function addToCoffees() {
+
+    if (!newCoffeeSelection.value) {
+        return;
+    }
     var coffee = {
         id: (coffees.length + 1),
         name: newCoffeeSelection.value,
@@ -79,3 +83,8 @@ coffeeSelection.addEventListener('input', updateCoffees);
 
 
 submitButton.addEventListener('click', addToCoffees);
+
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+});

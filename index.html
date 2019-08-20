@@ -9,46 +9,43 @@
 	</head>
 	<body class="container">
 		<h1>Coffee!</h1>
-		<div class="row">
+		<div class="divider"></div>
+		<div class="row section">
 			<div class="col l8" id="coffees"></div>
 			<div class="col l4">
-				<form class="row">
-					<div class="input-field">
-						<label for="roast-selection"></label>
-						<select id="roast-selection">
-							<option>all</option>
-							<option>light</option>
-							<option>medium</option>
-							<option>dark</option>
-						</select>
-					</div>
+				<h4>Filter</h4>
+				<div class="row">
+					<label for="roast-selection">Filter by Roast</label>
+					<select class="select" id="roast-selection">
+						<option>all</option>
+						<option>light</option>
+						<option>medium</option>
+						<option>dark</option>
+					</select>
 					<div class="input-field">
 						<input class="validate" id="coffee-selection" type="text">
-						<label for="coffee-selection">Select a Coffee</label>
+						<label for="coffee-selection">Coffee</label>
 					</div>
 					<input class="btn" id="" type="submit"/>
-				</form>
-				<form class="row">
-					<label for="new-roast-selection"></label>
+				</div>
+				<div class="divider"></div>
+				<div class="row section">
+				<h4>Add a new Coffee</h4>
+					<label for="new-roast-selection">Roast</label>
 					<select id="new-roast-selection">
 						<option>light</option>
 						<option>medium</option>
 						<option>dark</option>
 					</select>
 					<div class="input-field">
-						<label for="new-coffee-selection">Enter a new Coffee</label>
+						<label for="new-coffee-selection">Coffee</label>
 						<input id="new-coffee-selection" type="text">
 					</div>
-					<input class="btn" id="submit" type="submit"/>
-				</form>
-
-			<button id="submit"></button>
-
-
+					<button class="btn" id="submit">Submit</button>
+				</div>
 			</div>
 
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 			<script src="main.js"></script>
 		</div>
 	</body>
